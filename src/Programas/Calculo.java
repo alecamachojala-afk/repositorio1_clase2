@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 public class Calculo {
 public static void main(String[] args){
-double venta1, venta2, venta3, tv , pv;
+double venta1, venta2, venta3, venta4, tv , pv;
     String empleado;
     Scanner lectura=new Scanner(System.in);
     System.out.println("Ingrese nombre de empleado:");
@@ -26,8 +26,10 @@ double venta1, venta2, venta3, tv , pv;
     venta2=lectura.nextDouble();
     System.out.print("Ingresar venta3:");
     venta3=lectura.nextDouble();
-    tv = venta1 + venta2 + venta3;
-    pv = tv / 3;
+    System.out.print("Ingresar venta4:");
+    venta4=lectura.nextDouble();
+    tv = venta1 + venta2 + venta3 + venta4;
+    pv = tv / 4;
     System.out.println("El total de ventas es:" + tv);
     System.out.println("El promedio de ventas es:" + pv);
 } 
